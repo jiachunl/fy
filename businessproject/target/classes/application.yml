@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML5
+
+
+user:
+  username: zhangsan

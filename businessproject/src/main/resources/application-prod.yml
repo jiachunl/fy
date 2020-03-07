@@ -1,0 +1,58 @@
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/shopping?characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      username: root
+      password: woaini.521jcl
+      max-active: 20
+      max-wait: 6000
+      min-idle: 1
+      test-on-borrow: true
+      test-on-return: true
+mybatis:
+  mapper-locations: classpath*:com/neuedu/mapper/*Mapper.xml
+  config-location: classpath:mybatis-config.xml
+
+user:
+  username: root
+server:
+  port: 8888
+
+upload:
+  path: E:\\Ideacode\\ftp
+
+redis:
+  maxTotal: 8
+  maxIdle: 8
+  minIdle: 0
+  blockWhenExhausted: true
+  maxWaitMillis: 10000
+  testOnBorrow: true
+  testOnReturn: true
+  jmxEnabled: true
+  redisHost: 47.94.155.74
+  redisPort: 6379
+  redisPassword: Qinfo20180507
+  timeout: 1000
+  kvstore: kvstore
+
+alipay:
+  callback:
+    url: http://39.96.93.31:8888/order/alipay_callback.do
+
+  qrcode:
+    path: /imgs
+
+  public:
+    key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvHn+ibgP7Y7j3RRkh+isOQkztqcBvSVNVOTp+QOyCcirGVJfr4Rb+aOKc0IvRfhaNxfNvokEVjNJaA4zUR/3sG4zedAyyxjRaYYAR71eSDJIHO5yEsIfT00/fUdZnOP5+ai8I6/U/lO58yaEfrFRDuy61ifAJhIkKL2EwS8LJWSbBx618t/DbX2/S/yJEusOSqCO/OF/QrAwY4FrVhtwWkniYyWvxnhy5EsV9do0/x7qwj5NwpOntR7K84nXnWAalD4eieh/8nAw0HaA2r1nyI+1ZXIB7/bT5W11DzV1hbL2bpmJoUTmVI/vQ/e17iZdjEpcEZwaBpsj5Z7iRZo7XQIDAQAB
+
+token:
+  timeout: 10
+
+ftp:
+  host: 39.96.93.31
+  user: ftpuser
+  pass: 123456jcl
